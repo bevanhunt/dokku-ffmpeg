@@ -1,17 +1,14 @@
 # dokku-ffmpeg
 
-dokku-weasyprint is an awesome plugin for [dokku][dokku] that properly installs the weasyprint into the docker instance.
-This plugin should fix the problems you may have when downloading weasyprint with ```apt-get``` for example by using another awesome plugin [dokku-apt][dokku-apt].
-
 ## Installation
 
 On your dokku server:
 ```
 # On 0.3.x
-git clone https://github.com/backstitch/dokku-ffmpeg /var/lib/dokku/plugins/dokku-ffmpeg
+git clone https://github.com/bevanhunt/dokku-ffmpeg /var/lib/dokku/plugins/dokku-ffmpeg
 
 # On 0.4.x
-dokku plugin:install https://github.com/backstitch/dokku-ffmpeg.git ffmpeg
+dokku plugin:install https://github.com/bevanhunt/dokku-ffmpeg.git ffmpeg
 ```
 
 All future deployments will have dokku-ffmpeg installed.
