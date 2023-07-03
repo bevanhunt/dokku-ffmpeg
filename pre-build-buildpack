@@ -6,15 +6,8 @@ echo "-----> Installing ffmpeg ..."
 COMMAND=$(cat <<EOF
 echo "-----> install requirements"
 
-grep -v "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" /etc/apt/sources.list > temp.txt; mv temp.txt /etc/apt/sources.list
-
-export DEBIAN_FRONTEND=noninteractive
 apt-get -y update
-apt-get install -y software-properties-common
-apt-get install -y --reinstall ca-certificates
-add-apt-repository -y ppa:mc3man/trusty-media
-apt-get -y update
-apt-get install -y --force-yes ffmpeg
+apt-get install -y ffmpeg
 
 sleep 1 # wait so that docker run has not exited before docker attach
 EOF
