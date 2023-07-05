@@ -8,6 +8,7 @@ echo "-----> install requirements"
 
 apt-get -y update
 apt-get install -y ffmpeg
+apt-get install -y build-essential
 
 sleep 1 # wait so that docker run has not exited before docker attach
 EOF
